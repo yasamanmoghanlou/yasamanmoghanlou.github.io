@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,27 +9,19 @@
 
   <meta
     name="description"
-    content="Yasaman Moghanlou is a PhD Researcher in Computing Science at the University of Glasgow, working on multimodal learning and health monitoring."
+    content="Yasaman Moghanlou is a PhD Researcher in Computing Science at the University of Glasgow."
   >
 
   <meta name="author" content="Yasaman Moghanlou">
 
-  <!-- SEO: alternate spelling -->
-  <meta name="keywords"
-        content="Yasaman Moghanlou, Yasaman Moghanloo, University of Glasgow, PhD Researcher, Computing Science, Multimodal Learning, Health Monitoring">
+  <meta
+    name="keywords"
+    content="Yasaman Moghanlou, Yasaman Moghanloo, University of Glasgow, Computing Science, PhD Researcher, Machine Learning, Health Monitoring"
+  >
 
   <link rel="canonical" href="https://yasamanmoghanlou.github.io/">
 
-  <!-- Social preview -->
-  <meta property="og:title" content="Yasaman Moghanlou | PhD Researcher">
-  <meta property="og:description"
-        content="PhD Researcher in Computing Science at the University of Glasgow.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://yasamanmoghanlou.github.io/">
-  <meta property="og:image"
-        content="https://github.com/yasamanmoghanlou.png?size=500">
-
-  <!-- Structured data for Google -->
+  <!-- Structured data for search engines -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -42,25 +35,34 @@
       "@type": "Organization",
       "name": "University of Glasgow"
     },
+    "email": "mailto:yasamanmoghanlou@gmail.com",
     "sameAs": [
       "https://github.com/yasamanmoghanlou",
-      "https://www.linkedin.com/in/yasaman-moghanlou-b3443229b/"
+      "https://www.linkedin.com/in/yasaman-moghanlou-b3443229b/",
+      "https://orcid.org/0009-0003-1567-8463"
     ]
   }
   </script>
 
+
   <style>
+
     :root {
       --background: #ffffff;
       --background-soft: #f7f8fb;
-      --text: #17181c;
-      --text-soft: #5f6470;
-      --text-light: #858a94;
+
+      --text: #18191e;
+      --text-soft: #616672;
+      --text-light: #8b909a;
+
       --border: #e7e8ec;
+
       --accent: #5367e8;
       --accent-soft: #eef0ff;
+
       --max-width: 1100px;
     }
+
 
     * {
       box-sizing: border-box;
@@ -68,9 +70,11 @@
       padding: 0;
     }
 
+
     html {
       scroll-behavior: smooth;
     }
+
 
     body {
       font-family:
@@ -81,392 +85,470 @@
         Arial,
         sans-serif;
 
-      background: var(--background);
       color: var(--text);
+      background: var(--background);
+
       line-height: 1.7;
       -webkit-font-smoothing: antialiased;
     }
+
 
     a {
       color: inherit;
     }
 
-    /* NAVIGATION */
+
+
+    /* -------------------- NAVIGATION -------------------- */
 
     nav {
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(255, 255, 255, 0.92);
+
+      background: rgba(255, 255, 255, 0.94);
+
       backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(231, 232, 236, 0.75);
+      -webkit-backdrop-filter: blur(12px);
+
+      border-bottom: 1px solid var(--border);
     }
+
 
     .nav-container {
       max-width: var(--max-width);
+
       margin: auto;
       padding: 20px 28px;
 
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
     }
 
+
     .nav-name {
-      font-weight: 700;
       font-size: 19px;
+      font-weight: 700;
+
       text-decoration: none;
-      letter-spacing: -0.2px;
     }
+
 
     .nav-links {
       display: flex;
-      align-items: center;
       gap: 28px;
     }
 
+
     .nav-links a {
-      text-decoration: none;
       color: var(--text-soft);
+
       font-size: 15px;
       font-weight: 500;
-      transition: 0.2s;
+
+      text-decoration: none;
+
+      transition: color 0.2s ease;
     }
+
 
     .nav-links a:hover {
       color: var(--accent);
     }
 
-    /* HERO */
+
+
+    /* -------------------- HERO -------------------- */
 
     .hero {
       max-width: var(--max-width);
+
       margin: auto;
       padding: 110px 28px 120px;
 
       display: grid;
-      grid-template-columns: 1.4fr 0.8fr;
+
+      grid-template-columns: 0.8fr 1.4fr;
+
       gap: 90px;
+
       align-items: center;
     }
 
-    .eyebrow {
-      color: var(--accent);
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: 1.4px;
-      text-transform: uppercase;
-      margin-bottom: 18px;
+
+
+    /* PHOTO */
+
+    .hero-image {
+      display: flex;
+      justify-content: center;
     }
+
+
+    .photo-wrap {
+      position: relative;
+
+      width: 300px;
+      height: 300px;
+    }
+
+
+    .photo-wrap::before {
+      content: "";
+
+      position: absolute;
+
+      inset: -12px;
+
+      border-radius: 50%;
+
+      background: var(--accent-soft);
+
+      z-index: -1;
+    }
+
+
+    .profile-photo {
+      width: 300px;
+      height: 300px;
+
+      display: block;
+
+      object-fit: cover;
+
+      border-radius: 50%;
+
+      border: 6px solid #ffffff;
+
+      box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.08);
+    }
+
+
+
+    /* HERO TEXT */
+
+    .eyebrow {
+      margin-bottom: 17px;
+
+      color: var(--accent);
+
+      font-size: 13px;
+      font-weight: 700;
+
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
 
     h1 {
-      font-size: clamp(48px, 7vw, 72px);
+      margin-bottom: 22px;
+
+      font-size: clamp(48px, 6vw, 67px);
+
       line-height: 1.05;
-      letter-spacing: -3px;
-      margin-bottom: 24px;
+
+      letter-spacing: -2.5px;
     }
+
 
     .subtitle {
+      margin-bottom: 4px;
+
+      color: #383c45;
+
       font-size: 23px;
       font-weight: 500;
-      color: #383c45;
-      margin-bottom: 5px;
     }
+
 
     .university {
-      font-size: 18px;
+      margin-bottom: 30px;
+
       color: var(--text-soft);
-      margin-bottom: 28px;
+
+      font-size: 18px;
     }
 
-    .intro {
-      max-width: 650px;
-      font-size: 18px;
-      color: var(--text-soft);
-      margin-bottom: 34px;
-    }
 
-    /* SOCIAL BUTTONS */
 
-    .buttons {
+    /* -------------------- SOCIAL LINKS -------------------- */
+
+    .social-links {
       display: flex;
       flex-wrap: wrap;
+
       gap: 12px;
     }
 
-    .button {
+
+    .social-link {
       display: inline-flex;
+
       align-items: center;
-      gap: 8px;
+      justify-content: center;
 
       padding: 10px 17px;
 
       border: 1px solid var(--border);
       border-radius: 9px;
 
-      text-decoration: none;
+      background: #ffffff;
+
+      color: var(--text);
+
       font-size: 15px;
       font-weight: 600;
 
-      background: white;
+      text-decoration: none;
 
       transition:
-        transform 0.2s,
-        border-color 0.2s,
-        background 0.2s;
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
     }
 
-    .button:hover {
+
+    .social-link:hover {
       transform: translateY(-2px);
-      border-color: #bbb;
+
       background: var(--background-soft);
+
+      border-color: #c9cbd2;
     }
 
-    .button.primary {
-      background: var(--text);
-      color: white;
-      border-color: var(--text);
-    }
 
-    .button.primary:hover {
-      background: #303136;
-    }
 
-    .button svg {
-      width: 17px;
-      height: 17px;
-    }
-
-    /* PROFILE IMAGE */
-
-    .hero-image {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .photo-wrap {
-      position: relative;
-      width: 300px;
-      height: 300px;
-    }
-
-    .photo-wrap::before {
-      content: "";
-      position: absolute;
-      inset: -12px;
-      border-radius: 50%;
-      background: var(--accent-soft);
-      z-index: -1;
-    }
-
-    .profile-photo {
-      width: 300px;
-      height: 300px;
-
-      border-radius: 50%;
-      object-fit: cover;
-
-      display: block;
-
-      border: 6px solid white;
-
-      box-shadow:
-        0 10px 30px rgba(0, 0, 0, 0.07);
-    }
-
-    /* SECTIONS */
+    /* -------------------- GENERAL SECTIONS -------------------- */
 
     section {
       max-width: var(--max-width);
+
       margin: auto;
       padding: 90px 28px;
+
       border-top: 1px solid var(--border);
     }
 
+
     .section-label {
+      margin-bottom: 8px;
+
       color: var(--accent);
+
       font-size: 13px;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
       font-weight: 700;
-      margin-bottom: 10px;
+
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
     }
+
 
     h2 {
-      font-size: 38px;
-      letter-spacing: -1px;
       margin-bottom: 30px;
+
+      font-size: 38px;
+
+      letter-spacing: -1px;
     }
 
-    .section-text {
-      max-width: 780px;
+
+
+    /* -------------------- ABOUT -------------------- */
+
+    .about-text {
+      max-width: 850px;
+
       color: var(--text-soft);
+
       font-size: 18px;
     }
 
-    /* RESEARCH */
 
-    .research-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-      margin-top: 42px;
+    .about-text p + p {
+      margin-top: 22px;
     }
 
-    .card {
-      padding: 30px;
 
-      border: 1px solid var(--border);
-      border-radius: 14px;
+    .about-text a {
+      color: var(--text);
 
-      background: white;
+      font-weight: 600;
 
-      transition:
-        transform 0.25s,
-        box-shadow 0.25s,
-        border-color 0.25s;
+      text-decoration: none;
     }
 
-    .card:hover {
-      transform: translateY(-5px);
-      border-color: #d8d9df;
-      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
-    }
 
-    .card-number {
+    .about-text a:hover {
       color: var(--accent);
-      font-size: 13px;
-      font-weight: 700;
-      margin-bottom: 18px;
     }
 
-    .card h3 {
-      font-size: 19px;
-      margin-bottom: 10px;
-    }
 
-    .card p {
-      color: var(--text-soft);
-      font-size: 15px;
-    }
 
-    /* FEATURED RESEARCH */
-
-    .featured-research {
-      margin-top: 45px;
-      padding: 40px;
-
-      background: var(--background-soft);
-      border-radius: 16px;
-    }
-
-    .featured-research h3 {
-      max-width: 750px;
-      font-size: 25px;
-      line-height: 1.4;
-      margin-bottom: 17px;
-    }
-
-    .featured-research p {
-      max-width: 760px;
-      color: var(--text-soft);
-      margin-bottom: 20px;
-    }
-
-    .research-tag {
-      display: inline-block;
-
-      padding: 5px 10px;
-      margin-bottom: 15px;
-
-      border-radius: 6px;
-
-      background: var(--accent-soft);
-      color: var(--accent);
-
-      font-size: 12px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.8px;
-    }
-
-    /* EDUCATION */
+    /* -------------------- EDUCATION -------------------- */
 
     .education-item {
       display: grid;
+
       grid-template-columns: 170px 1fr;
+
       gap: 30px;
-      padding: 24px 0;
+
+      padding: 25px 0;
+
       border-bottom: 1px solid var(--border);
     }
+
 
     .education-item:last-child {
       border-bottom: none;
     }
 
+
     .education-date {
       color: var(--text-light);
+
       font-size: 15px;
     }
 
+
     .education-info h3 {
-      font-size: 18px;
       margin-bottom: 3px;
+
+      font-size: 19px;
     }
+
 
     .education-info p {
       color: var(--text-soft);
     }
 
-    /* CONTACT */
 
-    .contact-box {
+
+    /* -------------------- RESEARCH -------------------- */
+
+    .research-box {
+      padding: 42px;
+
       background: var(--background-soft);
 
-      padding: 50px;
+      border-radius: 18px;
+    }
+
+
+    .research-tag {
+      display: inline-block;
+
+      margin-bottom: 17px;
+      padding: 5px 10px;
+
+      border-radius: 6px;
+
+      background: var(--accent-soft);
+
+      color: var(--accent);
+
+      font-size: 12px;
+      font-weight: 700;
+
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+
+
+    .research-box h3 {
+      max-width: 800px;
+
+      margin-bottom: 18px;
+
+      font-size: 27px;
+
+      line-height: 1.4;
+    }
+
+
+    .research-box p {
+      max-width: 800px;
+
+      color: var(--text-soft);
+
+      font-size: 17px;
+    }
+
+
+
+    /* -------------------- CONTACT -------------------- */
+
+    .contact-box {
+      padding: 48px;
+
+      display: flex;
+
+      justify-content: space-between;
+      align-items: center;
+
+      gap: 40px;
 
       border-radius: 18px;
 
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 30px;
+      background: var(--background-soft);
     }
+
 
     .contact-box h2 {
       margin-bottom: 10px;
     }
 
-    .contact-box p {
+
+    .contact-intro {
       color: var(--text-soft);
     }
 
-    /* FOOTER */
+
+    .contact-details {
+      display: flex;
+
+      flex-direction: column;
+
+      gap: 12px;
+
+      min-width: 260px;
+    }
+
+
+    .contact-details a {
+      color: var(--accent);
+
+      font-weight: 600;
+
+      text-decoration: none;
+    }
+
+
+    .contact-details a:hover {
+      text-decoration: underline;
+    }
+
+
+
+    /* -------------------- FOOTER -------------------- */
 
     footer {
       max-width: var(--max-width);
+
       margin: auto;
 
       padding: 45px 28px;
 
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-
       color: var(--text-light);
+
       font-size: 14px;
     }
 
-    footer a {
-      text-decoration: none;
-    }
 
-    footer a:hover {
-      color: var(--accent);
-    }
 
-    /* MOBILE */
+    /* -------------------- MOBILE -------------------- */
 
     @media (max-width: 800px) {
 
@@ -474,165 +556,200 @@
         display: none;
       }
 
+
       .hero {
         padding-top: 65px;
         padding-bottom: 80px;
 
         grid-template-columns: 1fr;
+
         gap: 55px;
       }
 
+
       .hero-image {
-        grid-row: 1;
         justify-content: flex-start;
       }
 
+
       .photo-wrap,
       .profile-photo {
-        width: 190px;
-        height: 190px;
+        width: 200px;
+        height: 200px;
       }
+
 
       h1 {
         letter-spacing: -2px;
       }
 
-      .subtitle {
-        font-size: 20px;
-      }
-
-      .research-grid {
-        grid-template-columns: 1fr;
-      }
 
       section {
         padding-top: 65px;
         padding-bottom: 65px;
       }
 
+
       .education-item {
         grid-template-columns: 1fr;
+
         gap: 5px;
       }
 
+
       .contact-box {
         padding: 32px;
+
         flex-direction: column;
+
         align-items: flex-start;
       }
 
-      footer {
-        flex-direction: column;
-      }
     }
+
   </style>
+
 </head>
+
 
 <body>
 
-  <!-- NAVIGATION -->
+
+
+  <!-- ==================== NAVIGATION ==================== -->
+
   <nav>
+
     <div class="nav-container">
 
-      <a class="nav-name" href="#">
+      <a
+        class="nav-name"
+        href="#"
+      >
         Yasaman Moghanlou
       </a>
 
+
       <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
+
+        <a href="#about">
+          About
+        </a>
+
+        <a href="#education">
+          Education
+        </a>
+
+        <a href="#research">
+          Research
+        </a>
+
+        <a href="#contact">
+          Contact
+        </a>
+
       </div>
 
     </div>
+
   </nav>
+
+
 
 
   <main>
 
-    <!-- HERO -->
+
+
+    <!-- ==================== HERO ==================== -->
+
     <div class="hero">
 
-      <div class="hero-content">
 
-        <div class="eyebrow">
-          PhD Researcher
-        </div>
+      <!-- PROFILE PHOTO -->
 
-        <h1>
-          Yasaman<br>
-          Moghanlou
-        </h1>
-
-        <div class="subtitle">
-          PhD Researcher in Computing Science
-        </div>
-
-        <div class="university">
-          University of Glasgow
-        </div>
-
-        <p class="intro">
-          My research focuses on multimodal learning for health monitoring,
-          with a particular interest in modelling interactions between
-          cardiac and respiratory systems.
-        </p>
-
-
-        <div class="buttons">
-
-          <!-- GitHub -->
-          <a
-            class="button primary"
-            href="https://github.com/yasamanmoghanlou"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 .7C5.7.7.6 5.8.6 12.1c0 5 3.3 9.2 7.8 10.7.6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2.9-.3 1.9-.4 2.9-.4 1 0 2 .1 2.9.4 2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.1v3.1c0 .4.2.7.8.6 4.5-1.5 7.8-5.7 7.8-10.7C23.4 5.8 18.3.7 12 .7z"/>
-            </svg>
-            GitHub
-          </a>
-
-
-          <!-- LinkedIn -->
-          <a
-            class="button"
-            href="https://www.linkedin.com/in/yasaman-moghanlou-b3443229b/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path d="M5.3 3.5A2.3 2.3 0 1 1 .7 3.5a2.3 2.3 0 0 1 4.6 0zM1.1 8h4.4v14H1.1V8zm7.1 0h4.2v1.9h.1c.6-1.1 2-2.3 4.1-2.3 4.4 0 5.2 2.9 5.2 6.6V22h-4.4v-6.9c0-1.6 0-3.8-2.3-3.8s-2.6 1.8-2.6 3.7v7H8.2V8z"/>
-            </svg>
-            LinkedIn
-          </a>
-
-
-          <!-- CV -->
-          <a
-            class="button"
-            href="cv.pdf"
-            target="_blank"
-          >
-            CV
-          </a>
-
-        </div>
-
-      </div>
-
-
-      <!-- GitHub Profile Photo -->
       <div class="hero-image">
 
         <div class="photo-wrap">
+
           <img
             class="profile-photo"
             src="https://github.com/yasamanmoghanlou.png?size=500"
             alt="Yasaman Moghanlou"
           >
+
+        </div>
+
+      </div>
+
+
+
+      <!-- NAME AND LINKS -->
+
+      <div>
+
+        <div class="eyebrow">
+          PhD Researcher
+        </div>
+
+
+        <h1>
+          Yasaman Moghanlou
+        </h1>
+
+
+        <div class="subtitle">
+          PhD Researcher in Computing Science
+        </div>
+
+
+        <div class="university">
+          University of Glasgow
+        </div>
+
+
+
+        <div class="social-links">
+
+
+          <!-- GITHUB -->
+
+          <a
+            class="social-link"
+            href="https://github.com/yasamanmoghanlou"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+
+
+
+          <!-- LINKEDIN -->
+
+          <a
+            class="social-link"
+            href="https://www.linkedin.com/in/yasaman-moghanlou-b3443229b/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+
+
+
+          <!-- ORCID -->
+
+          <a
+            class="social-link"
+            href="https://orcid.org/0009-0003-1567-8463"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ORCID
+          </a>
+
+
         </div>
 
       </div>
@@ -640,105 +757,41 @@
     </div>
 
 
-    <!-- ABOUT -->
+
+
+    <!-- ==================== ABOUT ==================== -->
+
     <section id="about">
+
 
       <div class="section-label">
         About
       </div>
 
+
       <h2>
         About Me
       </h2>
 
-      <p class="section-text">
-        I am a PhD researcher in Computing Science at the University
-        of Glasgow. My work explores machine learning approaches for
-        understanding multimodal physiological data and developing
-        methods for health monitoring.
-      </p>
-
-    </section>
 
 
-    <!-- RESEARCH -->
-    <section id="research">
-
-      <div class="section-label">
-        Research
-      </div>
-
-      <h2>
-        Research Interests
-      </h2>
-
-      <p class="section-text">
-        My research sits at the intersection of machine learning,
-        physiological sensing, and computational health.
-      </p>
-
-
-      <div class="research-grid">
-
-        <div class="card">
-          <div class="card-number">01</div>
-
-          <h3>
-            Multimodal Learning
-          </h3>
-
-          <p>
-            Machine learning methods for integrating and understanding
-            information from multiple physiological modalities.
-          </p>
-        </div>
-
-
-        <div class="card">
-          <div class="card-number">02</div>
-
-          <h3>
-            Cardiorespiratory Modelling
-          </h3>
-
-          <p>
-            Investigating interactions between cardiac and respiratory
-            physiological systems.
-          </p>
-        </div>
-
-
-        <div class="card">
-          <div class="card-number">03</div>
-
-          <h3>
-            Health Monitoring
-          </h3>
-
-          <p>
-            Data-driven approaches for physiological monitoring and
-            computational health applications.
-          </p>
-        </div>
-
-      </div>
-
-
-      <div class="featured-research">
-
-        <div class="research-tag">
-          PhD Research
-        </div>
-
-        <h3>
-          Modeling the Heart–Lung Axis through Multimodal Learning
-          for Health Monitoring
-        </h3>
+      <div class="about-text">
 
         <p>
-          My doctoral research investigates how multimodal machine
-          learning can be used to model interactions between cardiac
-          and respiratory systems for health monitoring.
+          I am currently a PhD researcher in Computing Science at the
+          University of Glasgow, supervised by
+          <strong>Fahim Kawsar</strong> and
+          <strong>Tanaya Guha</strong>.
+          My doctoral research focuses on modelling the heart–lung axis
+          through multimodal learning for health monitoring.
+        </p>
+
+
+        <p>
+          Before starting my PhD, I completed my master's degree at the
+          University of Glasgow in 2024–2025.
+          I received my bachelor's degree in Computer Engineering from
+          Islamic Azad University, Iran, where I studied from 2020 to 2024.
         </p>
 
       </div>
@@ -746,16 +799,25 @@
     </section>
 
 
-    <!-- EDUCATION -->
+
+
+    <!-- ==================== EDUCATION ==================== -->
+
     <section id="education">
+
 
       <div class="section-label">
         Background
       </div>
 
+
       <h2>
         Education
       </h2>
+
+
+
+      <!-- PhD -->
 
       <div class="education-item">
 
@@ -763,7 +825,9 @@
           Current
         </div>
 
+
         <div class="education-info">
+
           <h3>
             PhD in Computing Science
           </h3>
@@ -771,34 +835,117 @@
           <p>
             University of Glasgow
           </p>
+
         </div>
 
       </div>
 
-      <!--
-      Add your previous degrees here later.
 
-      Example:
+
+      <!-- MASTER'S -->
 
       <div class="education-item">
+
         <div class="education-date">
-          2022 – 2024
+          2024 – 2025
         </div>
 
+
         <div class="education-info">
-          <h3>Master's Degree</h3>
-          <p>University Name</p>
+
+          <h3>
+            Master's Degree
+          </h3>
+
+          <p>
+            University of Glasgow
+          </p>
+
         </div>
+
       </div>
-      -->
+
+
+
+      <!-- BACHELOR'S -->
+
+      <div class="education-item">
+
+        <div class="education-date">
+          2020 – 2024
+        </div>
+
+
+        <div class="education-info">
+
+          <h3>
+            Bachelor's Degree in Computer Engineering
+          </h3>
+
+          <p>
+            Islamic Azad University, Iran
+          </p>
+
+        </div>
+
+      </div>
+
 
     </section>
 
 
-    <!-- CONTACT -->
+
+
+    <!-- ==================== RESEARCH ==================== -->
+
+    <section id="research">
+
+
+      <div class="section-label">
+        Current Research
+      </div>
+
+
+      <h2>
+        PhD Project
+      </h2>
+
+
+
+      <div class="research-box">
+
+
+        <div class="research-tag">
+          Doctoral Research
+        </div>
+
+
+        <h3>
+          Modeling the Heart–Lung Axis through Multimodal Learning
+          for Health Monitoring
+        </h3>
+
+
+        <p>
+          Doctoral research at the University of Glasgow under the
+          supervision of Fahim Kawsar and Tanaya Guha.
+        </p>
+
+
+      </div>
+
+    </section>
+
+
+
+
+    <!-- ==================== CONTACT ==================== -->
+
     <section id="contact">
 
+
       <div class="contact-box">
+
 
         <div>
 
@@ -806,22 +953,36 @@
             Contact
           </div>
 
+
           <h2>
             Get in touch
           </h2>
 
-          <p>
-            School of Computing Science<br>
-            University of Glasgow
+
+          <p class="contact-intro">
+            You can reach me via email or LinkedIn.
           </p>
 
         </div>
 
 
-        <div class="buttons">
+
+        <div class="contact-details">
+
+
+          <!-- EMAIL -->
 
           <a
-            class="button primary"
+            href="mailto:yasamanmoghanlou@gmail.com"
+          >
+            yasamanmoghanlou@gmail.com
+          </a>
+
+
+
+          <!-- LINKEDIN -->
+
+          <a
             href="https://www.linkedin.com/in/yasaman-moghanlou-b3443229b/"
             target="_blank"
             rel="noopener noreferrer"
@@ -829,14 +990,6 @@
             LinkedIn
           </a>
 
-          <a
-            class="button"
-            href="https://github.com/yasamanmoghanlou"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
 
         </div>
 
@@ -844,27 +997,20 @@
 
     </section>
 
+
+
   </main>
 
 
-  <!-- FOOTER -->
+
+
+  <!-- ==================== FOOTER ==================== -->
+
   <footer>
-
-    <div>
-      © 2026 Yasaman Moghanlou
-    </div>
-
-    <div>
-      <a
-        href="https://github.com/yasamanmoghanlou"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Built with GitHub Pages
-      </a>
-    </div>
-
+    © 2026 Yasaman Moghanlou
   </footer>
 
+
 </body>
+
 </html>
