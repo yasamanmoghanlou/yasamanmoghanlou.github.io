@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Yasaman Moghanlou</title>
+  <meta name="description"
+        content="Yasaman Moghanlou — PhD Researcher in Computing Science at the University of Glasgow.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #222;
+      background: #fff;
+      line-height: 1.7;
+    }
+
+    nav {
+      max-width: 1050px;
+      margin: auto;
+      padding: 28px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .name {
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    nav a {
+      color: #444;
+      text-decoration: none;
+      margin-left: 24px;
+    }
+
+    nav a:hover {
+      color: #000;
+    }
+
+    .hero {
+      max-width: 1050px;
+      margin: 100px auto 120px;
+      padding: 0 24px;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 55px;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .subtitle {
+      font-size: 23px;
+      color: #555;
+      margin-bottom: 8px;
+    }
+
+    .university {
+      font-size: 18px;
+      color: #777;
+      margin-bottom: 28px;
+    }
+
+    .intro {
+      font-size: 18px;
+      max-width: 650px;
+      margin-bottom: 30px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin-right: 12px;
+      margin-bottom: 10px;
+      padding: 10px 17px;
+      border: 1px solid #222;
+      border-radius: 7px;
+      text-decoration: none;
+      color: #222;
+    }
+
+    .buttons a:hover {
+      background: #222;
+      color: white;
+    }
+
+    .photo-placeholder {
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      background: #f0f0f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #888;
+      margin: auto;
+    }
+
+    section {
+      max-width: 1050px;
+      margin: auto;
+      padding: 70px 24px;
+      border-top: 1px solid #eee;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 25px;
+    }
+
+    .research-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      padding: 25px;
+      border: 1px solid #e4e4e4;
+      border-radius: 12px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      max-width: 1050px;
+      margin: auto;
+      padding: 50px 24px;
+      color: #777;
+      font-size: 14px;
+    }
+
+    @media (max-width: 750px) {
+      .hero {
+        grid-template-columns: 1fr;
+        margin-top: 50px;
+      }
+
+      h1 {
+        font-size: 42px;
+      }
+
+      .hero-image {
+        order: -1;
+      }
+
+      .photo-placeholder {
+        width: 200px;
+        height: 200px;
+      }
+
+      .research-grid {
+        grid-template-columns: 1fr;
+      }
+
+      nav .links {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <div class="name">Yasaman Moghanlou</div>
+
+  <div class="links">
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+
+<main>
+
+  <div class="hero">
+
+    <div>
+      <h1>Yasaman Moghanlou</h1>
+
+      <div class="subtitle">
+        PhD Researcher in Computing Science
+      </div>
+
+      <div class="university">
+        University of Glasgow
+      </div>
+
+      <p class="intro">
+        My research focuses on multimodal learning for health monitoring,
+        with a particular interest in modelling interactions between
+        cardiac and respiratory systems.
+      </p>
+
+      <div class="buttons">
+        <a href="https://github.com/yasamanmoghanlou">
+          GitHub
+        </a>
+
+        <a href="#">
+          LinkedIn
+        </a>
+
+        <a href="#">
+          CV
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <div class="photo-placeholder">
+        Your photo
+      </div>
+    </div>
+
+  </div>
+
+
+  <section id="about">
+
+    <h2>About</h2>
+
+    <p>
+      I am a PhD researcher in Computing Science at the University of Glasgow.
+      My work explores machine learning approaches for understanding
+      multimodal physiological data and developing methods for health monitoring.
+    </p>
+
+  </section>
+
+
+  <section id="research">
+
+    <h2>Research Interests</h2>
+
+    <div class="research-grid">
+
+      <div class="card">
+        <h3>Multimodal Learning</h3>
+        <p>
+          Machine learning methods for combining information
+          from multiple physiological modalities.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Cardiorespiratory Modelling</h3>
+        <p>
+          Investigating relationships between cardiac and
+          respiratory physiological systems.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Health Monitoring</h3>
+        <p>
+          Data-driven approaches for physiological and
+          health monitoring.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section id="education">
+
+    <h2>Education</h2>
+
+    <p>
+      <strong>PhD in Computing Science</strong><br>
+      University of Glasgow
+    </p>
+
+  </section>
+
+
+  <section id="contact">
+
+    <h2>Contact</h2>
+
+    <p>
+      University of Glasgow<br>
+      School of Computing Science
+    </p>
+
+  </section>
+
+</main>
+
+
+<footer>
+  © 2026 Yasaman Moghanlou
+</footer>
+
+</body>
+</html>
