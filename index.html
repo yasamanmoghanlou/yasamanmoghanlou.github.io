@@ -307,9 +307,20 @@
       margin-top: 14px;
     }
 
-    .about-text strong {
+
+    /* SUPERVISOR LINKS */
+
+    .supervisor-link {
       color: #4b4f59;
       font-weight: 650;
+
+      text-decoration: none;
+
+      transition: color 0.2s ease;
+    }
+
+    .supervisor-link:hover {
+      color: var(--accent);
     }
 
 
@@ -709,8 +720,23 @@
             <p>
               I am currently a PhD researcher in Computing Science at the
               University of Glasgow, supervised by
-              <strong>Fahim Kawsar</strong> and
-              <strong>Tanaya Guha</strong>.
+              <a
+                class="supervisor-link"
+                href="https://www.gla.ac.uk/schools/computing/staff/fahimkawsar/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Professor Fahim Kawsar
+              </a>
+              and
+              <a
+                class="supervisor-link"
+                href="https://www.gla.ac.uk/schools/computing/staff/tanayaguha/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Professor Tanaya Guha
+              </a>.
               My doctoral research focuses on modelling the heart–lung axis
               through multimodal learning for health monitoring.
             </p>
@@ -856,7 +882,7 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              Fahim Kawsar
+              Professor Fahim Kawsar
             </a>
             and
             <a
@@ -865,7 +891,7 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              Tanaya Guha
+              Professor Tanaya Guha
             </a>.
           </p>
 
