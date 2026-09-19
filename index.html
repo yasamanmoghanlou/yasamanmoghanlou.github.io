@@ -6,24 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Yasaman Moghanlou | PhD Researcher</title>
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-
 
   <meta
     name="description"
-    content="Yasaman Moghanlou PhD Researcher in Computing Science at the University of Glasgow."
+    content="Yasaman Moghanlou is a PhD Researcher in Computing Science at the University of Glasgow."
   >
 
   <meta name="author" content="Yasaman Moghanlou">
 
   <meta
     name="keywords"
-    content="Yasaman Moghanlou, Yasaman Moghanloo, University of Glasgow, Computing Science, PhD Researcher, Machine Learning, Health Monitoring"
+    content="Yasaman Moghanlou, Yasaman Moghanloo, University of Glasgow, Computing Science, PhD Researcher"
   >
 
   <link rel="canonical" href="https://yasamanmoghanlou.github.io/">
 
-  <!-- Structured data for search engines -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -46,25 +45,18 @@
   }
   </script>
 
-
   <style>
 
     :root {
       --background: #ffffff;
-      --background-soft: #f7f8fb;
-
+      --background-soft: #f8f8fa;
       --text: #18191e;
-      --text-soft: #616672;
+      --text-soft: #626773;
       --text-light: #8b909a;
-
-      --border: #e7e8ec;
-
+      --border: #e8e9ed;
       --accent: #5367e8;
-      --accent-soft: #eef0ff;
-
       --max-width: 1100px;
     }
-
 
     * {
       box-sizing: border-box;
@@ -72,11 +64,9 @@
       padding: 0;
     }
 
-
     html {
       scroll-behavior: smooth;
     }
-
 
     body {
       font-family:
@@ -89,19 +79,16 @@
 
       color: var(--text);
       background: var(--background);
-
       line-height: 1.7;
       -webkit-font-smoothing: antialiased;
     }
-
 
     a {
       color: inherit;
     }
 
 
-
-    /* -------------------- NAVIGATION -------------------- */
+    /* NAV */
 
     nav {
       position: sticky;
@@ -109,130 +96,95 @@
       z-index: 100;
 
       background: rgba(255, 255, 255, 0.94);
-
       backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
 
       border-bottom: 1px solid var(--border);
     }
 
-
     .nav-container {
       max-width: var(--max-width);
-
       margin: auto;
-      padding: 20px 28px;
+      padding: 18px 28px;
 
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
 
-
     .nav-name {
-      font-size: 19px;
+      font-size: 18px;
       font-weight: 700;
-
       text-decoration: none;
     }
-
 
     .nav-links {
       display: flex;
-      gap: 28px;
+      gap: 27px;
     }
-
 
     .nav-links a {
       color: var(--text-soft);
-
       font-size: 15px;
-      font-weight: 500;
-
       text-decoration: none;
-
-      transition: color 0.2s ease;
     }
-
 
     .nav-links a:hover {
       color: var(--accent);
     }
 
 
-
-    /* -------------------- HERO -------------------- */
+    /* HERO */
 
     .hero {
       max-width: var(--max-width);
-
       margin: auto;
-      padding: 110px 28px 120px;
+
+      padding: 65px 28px 55px;
 
       display: grid;
-
       grid-template-columns: 0.8fr 1.4fr;
-
-      gap: 90px;
-
+      gap: 85px;
       align-items: center;
     }
-
-
-
-    /* PHOTO */
 
     .hero-image {
       display: flex;
       justify-content: center;
     }
 
-
     .photo-wrap {
+      width: 285px;
+      height: 285px;
       position: relative;
-
-      width: 300px;
-      height: 300px;
     }
-
 
     .photo-wrap::before {
       content: "";
-
       position: absolute;
-
-      inset: -12px;
+      inset: -10px;
 
       border-radius: 50%;
-
-      background: var(--accent-soft);
+      background: #f5e8ec;
 
       z-index: -1;
     }
 
-
     .profile-photo {
-      width: 300px;
-      height: 300px;
+      width: 285px;
+      height: 285px;
 
       display: block;
-
       object-fit: cover;
 
       border-radius: 50%;
-
-      border: 6px solid #ffffff;
+      border: 5px solid white;
 
       box-shadow:
-        0 12px 35px rgba(0, 0, 0, 0.08);
+        0 10px 28px rgba(0, 0, 0, 0.07);
     }
 
-
-
-    /* HERO TEXT */
-
     .eyebrow {
-      margin-bottom: 17px;
+      margin-bottom: 14px;
 
       color: var(--accent);
 
@@ -243,314 +195,191 @@
       text-transform: uppercase;
     }
 
-
     h1 {
-      margin-bottom: 22px;
+      margin-bottom: 17px;
 
-      font-size: clamp(48px, 6vw, 67px);
-
+      font-size: clamp(45px, 5.8vw, 64px);
       line-height: 1.05;
 
       letter-spacing: -2.5px;
     }
 
-
     .subtitle {
-      margin-bottom: 4px;
+      margin-bottom: 14px;
 
       color: #383c45;
 
-      font-size: 23px;
+      font-size: 22px;
       font-weight: 500;
     }
 
 
-    .university {
-      margin-bottom: 30px;
+    /* UNIVERSITY + LINKS */
 
-      color: var(--text-soft);
-
-      font-size: 18px;
-    }
-
-
-
-    /* -------------------- SOCIAL LINKS -------------------- */
-
-    .social-links {
+    .profile-links {
       display: flex;
       flex-wrap: wrap;
-
-      gap: 12px;
-    }
-
-
-    .social-link {
-      display: inline-flex;
-
       align-items: center;
-      justify-content: center;
 
-      padding: 10px 17px;
+      gap: 9px;
 
-      border: 1px solid var(--border);
-      border-radius: 9px;
+      color: var(--text-soft);
+      font-size: 16px;
+    }
 
-      background: #ffffff;
-
-      color: var(--text);
-
-      font-size: 15px;
-      font-weight: 600;
-
+    .profile-links a {
+      font-weight: 500;
       text-decoration: none;
+      color: var(--text-soft);
+    }
 
-      transition:
-        transform 0.2s ease,
-        background 0.2s ease,
-        border-color 0.2s ease;
+    .profile-links a:hover {
+      color: var(--accent);
+    }
+
+    .separator {
+      color: #c0c2c8;
     }
 
 
-    .social-link:hover {
-      transform: translateY(-2px);
-
-      background: var(--background-soft);
-
-      border-color: #c9cbd2;
-    }
-
-
-
-    /* -------------------- GENERAL SECTIONS -------------------- */
+    /* SECTIONS */
 
     section {
       max-width: var(--max-width);
-
       margin: auto;
-      padding: 90px 28px;
+
+      padding: 48px 28px;
 
       border-top: 1px solid var(--border);
     }
 
-
     .section-label {
-      margin-bottom: 8px;
+      margin-bottom: 6px;
 
       color: var(--accent);
 
       font-size: 13px;
       font-weight: 700;
 
-      letter-spacing: 1.5px;
+      letter-spacing: 1.4px;
       text-transform: uppercase;
     }
 
-
     h2 {
-      margin-bottom: 30px;
+      margin-bottom: 21px;
 
-      font-size: 38px;
-
+      font-size: 36px;
       letter-spacing: -1px;
     }
 
 
-
-    /* -------------------- ABOUT -------------------- */
+    /* ABOUT */
 
     .about-text {
-      max-width: 850px;
+      max-width: 880px;
 
       color: var(--text-soft);
-
       font-size: 18px;
     }
 
-
     .about-text p + p {
-      margin-top: 22px;
+      margin-top: 16px;
     }
 
 
-    .about-text a {
-      color: var(--text);
-
-      font-weight: 600;
-
-      text-decoration: none;
-    }
-
-
-    .about-text a:hover {
-      color: var(--accent);
-    }
-
-
-
-    /* -------------------- EDUCATION -------------------- */
+    /* EDUCATION */
 
     .education-item {
       display: grid;
+      grid-template-columns: 175px 1fr;
 
-      grid-template-columns: 170px 1fr;
+      gap: 28px;
 
-      gap: 30px;
-
-      padding: 25px 0;
+      padding: 18px 0;
 
       border-bottom: 1px solid var(--border);
     }
-
 
     .education-item:last-child {
       border-bottom: none;
     }
 
-
     .education-date {
       color: var(--text-light);
-
       font-size: 15px;
     }
 
-
     .education-info h3 {
-      margin-bottom: 3px;
-
-      font-size: 19px;
+      margin-bottom: 2px;
+      font-size: 18px;
     }
-
 
     .education-info p {
       color: var(--text-soft);
     }
 
 
+    /* PHD PROJECT */
 
-    /* -------------------- RESEARCH -------------------- */
+    .project-box {
+      padding: 28px 32px;
 
-    .research-box {
-      padding: 42px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
 
-      background: var(--background-soft);
-
-      border-radius: 18px;
+      background: #ffffff;
     }
 
+    .project-box h3 {
+      margin-bottom: 9px;
 
-    .research-tag {
-      display: inline-block;
-
-      margin-bottom: 17px;
-      padding: 5px 10px;
-
-      border-radius: 6px;
-
-      background: var(--accent-soft);
-
-      color: var(--accent);
-
-      font-size: 12px;
-      font-weight: 700;
-
-      letter-spacing: 0.8px;
-      text-transform: uppercase;
+      font-size: 21px;
+      line-height: 1.45;
     }
 
-
-    .research-box h3 {
-      max-width: 800px;
-
-      margin-bottom: 18px;
-
-      font-size: 27px;
-
-      line-height: 1.4;
-    }
-
-
-    .research-box p {
-      max-width: 800px;
-
+    .project-box p {
       color: var(--text-soft);
+      font-size: 16px;
+    }
+
+
+    /* CONTACT */
+
+    .contact-line {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      gap: 10px;
 
       font-size: 17px;
     }
 
-
-
-    /* -------------------- CONTACT -------------------- */
-
-    .contact-box {
-      padding: 48px;
-
-      display: flex;
-
-      justify-content: space-between;
-      align-items: center;
-
-      gap: 40px;
-
-      border-radius: 18px;
-
-      background: var(--background-soft);
-    }
-
-
-    .contact-box h2 {
-      margin-bottom: 10px;
-    }
-
-
-    .contact-intro {
-      color: var(--text-soft);
-    }
-
-
-    .contact-details {
-      display: flex;
-
-      flex-direction: column;
-
-      gap: 12px;
-
-      min-width: 260px;
-    }
-
-
-    .contact-details a {
-      color: var(--accent);
-
-      font-weight: 600;
-
+    .contact-line a {
+      color: var(--text);
+      font-weight: 500;
       text-decoration: none;
     }
 
-
-    .contact-details a:hover {
-      text-decoration: underline;
+    .contact-line a:hover {
+      color: var(--accent);
     }
 
 
-
-    /* -------------------- FOOTER -------------------- */
+    /* FOOTER */
 
     footer {
       max-width: var(--max-width);
-
       margin: auto;
 
-      padding: 45px 28px;
+      padding: 25px 28px 40px;
 
       color: var(--text-light);
-
-      font-size: 14px;
+      font-size: 13px;
     }
 
 
-
-    /* -------------------- MOBILE -------------------- */
+    /* MOBILE */
 
     @media (max-width: 800px) {
 
@@ -558,21 +387,18 @@
         display: none;
       }
 
-
       .hero {
-        padding-top: 65px;
-        padding-bottom: 80px;
+        padding-top: 45px;
+        padding-bottom: 42px;
 
         grid-template-columns: 1fr;
 
-        gap: 55px;
+        gap: 35px;
       }
-
 
       .hero-image {
         justify-content: flex-start;
       }
-
 
       .photo-wrap,
       .profile-photo {
@@ -580,31 +406,18 @@
         height: 200px;
       }
 
-
       h1 {
         letter-spacing: -2px;
       }
 
-
       section {
-        padding-top: 65px;
-        padding-bottom: 65px;
+        padding-top: 40px;
+        padding-bottom: 40px;
       }
-
 
       .education-item {
         grid-template-columns: 1fr;
-
-        gap: 5px;
-      }
-
-
-      .contact-box {
-        padding: 32px;
-
-        flex-direction: column;
-
-        align-items: flex-start;
+        gap: 3px;
       }
 
     }
@@ -617,20 +430,15 @@
 <body>
 
 
-
-  <!-- ==================== NAVIGATION ==================== -->
+  <!-- NAVIGATION -->
 
   <nav>
 
     <div class="nav-container">
 
-      <a
-        class="nav-name"
-        href="#"
-      >
+      <a class="nav-name" href="#">
         Yasaman Moghanlou
       </a>
-
 
       <div class="nav-links">
 
@@ -658,17 +466,13 @@
 
 
 
-
   <main>
 
 
-
-    <!-- ==================== HERO ==================== -->
+    <!-- HERO -->
 
     <div class="hero">
 
-
-      <!-- PROFILE PHOTO -->
 
       <div class="hero-image">
 
@@ -686,38 +490,30 @@
 
 
 
-      <!-- NAME AND LINKS -->
-
       <div>
 
         <div class="eyebrow">
           PhD Researcher
         </div>
 
-
         <h1>
           Yasaman Moghanlou
         </h1>
-
 
         <div class="subtitle">
           PhD Researcher in Computing Science
         </div>
 
 
-        <div class="university">
-          University of Glasgow
-        </div>
+        <div class="profile-links">
 
+          <span>
+            University of Glasgow
+          </span>
 
-
-        <div class="social-links">
-
-
-          <!-- GITHUB -->
+          <span class="separator">|</span>
 
           <a
-            class="social-link"
             href="https://github.com/yasamanmoghanlou"
             target="_blank"
             rel="noopener noreferrer"
@@ -725,12 +521,9 @@
             GitHub
           </a>
 
-
-
-          <!-- LINKEDIN -->
+          <span class="separator">|</span>
 
           <a
-            class="social-link"
             href="https://www.linkedin.com/in/yasaman-moghanlou-b3443229b/"
             target="_blank"
             rel="noopener noreferrer"
@@ -738,19 +531,15 @@
             LinkedIn
           </a>
 
-
-
-          <!-- ORCID -->
+          <span class="separator">|</span>
 
           <a
-            class="social-link"
             href="https://orcid.org/0009-0003-1567-8463"
             target="_blank"
             rel="noopener noreferrer"
           >
             ORCID
           </a>
-
 
         </div>
 
@@ -760,21 +549,17 @@
 
 
 
-
-    <!-- ==================== ABOUT ==================== -->
+    <!-- ABOUT -->
 
     <section id="about">
-
 
       <div class="section-label">
         About
       </div>
 
-
       <h2>
         About Me
       </h2>
-
 
 
       <div class="about-text">
@@ -787,7 +572,6 @@
           My doctoral research focuses on modelling the heart–lung axis
           through multimodal learning for health monitoring.
         </p>
-
 
         <p>
           Before starting my PhD, I completed my master's degree at the
@@ -802,31 +586,20 @@
 
 
 
-
-    <!-- ==================== EDUCATION ==================== -->
+    <!-- EDUCATION -->
 
     <section id="education">
-
-
-      <div class="section-label">
-        Background
-      </div>
-
 
       <h2>
         Education
       </h2>
 
 
-
-      <!-- PhD -->
-
       <div class="education-item">
 
         <div class="education-date">
-          Current
+          2026 – Current
         </div>
-
 
         <div class="education-info">
 
@@ -844,14 +617,11 @@
 
 
 
-      <!-- MASTER'S -->
-
       <div class="education-item">
 
         <div class="education-date">
           2024 – 2025
         </div>
-
 
         <div class="education-info">
 
@@ -869,14 +639,11 @@
 
 
 
-      <!-- BACHELOR'S -->
-
       <div class="education-item">
 
         <div class="education-date">
           2020 – 2024
         </div>
-
 
         <div class="education-info">
 
@@ -892,121 +659,68 @@
 
       </div>
 
-
     </section>
 
 
 
-
-    <!-- ==================== RESEARCH ==================== -->
+    <!-- PHD PROJECT -->
 
     <section id="research">
-
 
       <div class="section-label">
         Current Research
       </div>
 
-
-      <h2>
-        PhD Project
-      </h2>
-
-
-
-      <div class="research-box">
-
-
-        <div class="research-tag">
-          Doctoral Research
-        </div>
-
+      <div class="project-box">
 
         <h3>
           Modeling the Heart–Lung Axis through Multimodal Learning
           for Health Monitoring
         </h3>
 
-
         <p>
           Doctoral research at the University of Glasgow under the
           supervision of Fahim Kawsar and Tanaya Guha.
         </p>
 
-
       </div>
 
     </section>
 
 
 
-
-    <!-- ==================== CONTACT ==================== -->
+    <!-- CONTACT -->
 
     <section id="contact">
 
+      <h2>
+        Get in touch
+      </h2>
 
-      <div class="contact-box">
+      <div class="contact-line">
 
+        <a href="mailto:yasamanmoghanlou@gmail.com">
+          yasamanmoghanlou@gmail.com
+        </a>
 
-        <div>
+        <span class="separator">|</span>
 
-          <div class="section-label">
-            Contact
-          </div>
-
-
-          <h2>
-            Get in touch
-          </h2>
-
-
-          <p class="contact-intro">
-            You can reach me via email or LinkedIn.
-          </p>
-
-        </div>
-
-
-
-        <div class="contact-details">
-
-
-          <!-- EMAIL -->
-
-          <a
-            href="mailto:yasamanmoghanlou@gmail.com"
-          >
-            yasamanmoghanlou@gmail.com
-          </a>
-
-
-
-          <!-- LINKEDIN -->
-
-          <a
-            href="https://www.linkedin.com/in/yasaman-moghanlou-b3443229b/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn
-          </a>
-
-
-        </div>
+        <a
+          href="https://www.linkedin.com/in/yasaman-moghanlou-b3443229b/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
 
       </div>
 
     </section>
-
 
 
   </main>
 
 
-
-
-  <!-- ==================== FOOTER ==================== -->
 
   <footer>
     © 2026 Yasaman Moghanlou
