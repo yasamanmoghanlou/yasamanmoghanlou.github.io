@@ -125,9 +125,9 @@
       padding: 50px 28px 28px;
 
       display: grid;
-      grid-template-columns: 0.8fr 1.4fr;
+      grid-template-columns: 0.72fr 1.48fr;
 
-      gap: 85px;
+      gap: 72px;
 
       align-items: start;
     }
@@ -179,24 +179,27 @@
     }
 
 
-    /* SOCIAL LINKS UNDER PHOTO */
+    /* =========================
+       SOCIAL LINKS UNDER PHOTO
+    ========================= */
 
     .social-list {
       width: 265px;
-
       margin-top: 24px;
 
       display: flex;
       flex-direction: column;
 
-      gap: 7px;
+      gap: 9px;
     }
 
     .social-list a {
-      display: flex;
-      align-items: center;
+      display: grid;
 
-      gap: 10px;
+      grid-template-columns: 24px 1fr;
+
+      align-items: center;
+      column-gap: 10px;
 
       color: var(--text-soft);
 
@@ -218,6 +221,10 @@
     .social-icon {
       width: 19px;
       height: 19px;
+
+      display: block;
+
+      justify-self: center;
 
       flex-shrink: 0;
     }
@@ -268,7 +275,7 @@
     ========================= */
 
     .about {
-      margin-top: 38px;
+      margin-top: 32px;
     }
 
     .section-title {
@@ -285,7 +292,15 @@
 
     .about-text {
       color: var(--text-soft);
+
       font-size: 17px;
+      line-height: 1.75;
+
+      max-width: 100%;
+    }
+
+    .about-text p {
+      text-wrap: pretty;
     }
 
     .about-text p + p {
@@ -309,9 +324,9 @@
       padding: 30px 28px;
 
       display: grid;
-      grid-template-columns: 0.8fr 1.4fr;
+      grid-template-columns: 0.72fr 1.48fr;
 
-      column-gap: 85px;
+      column-gap: 72px;
     }
 
     .section-content {
@@ -390,9 +405,9 @@
       padding: 25px 28px 38px;
 
       display: grid;
-      grid-template-columns: 0.8fr 1.4fr;
+      grid-template-columns: 0.72fr 1.48fr;
 
-      column-gap: 85px;
+      column-gap: 72px;
 
       color: var(--text-light);
       font-size: 12px;
@@ -440,7 +455,7 @@
       }
 
       .about {
-        margin-top: 30px;
+        margin-top: 28px;
       }
 
       .content-section {
@@ -452,6 +467,7 @@
 
       .education-item {
         grid-template-columns: 1fr;
+
         gap: 1px;
 
         padding: 9px 0;
